@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/05/27 12:36:18 by nschat        ########   odam.nl          #
+#    Updated: 2020/05/31 21:25:55 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CFLAGS = -Wall -Wextra -Werror -I $(IDIR) -I mlx
 HDR = $(IDIR)/minirt.h
 SRC = main.c \
 	  file.c \
+	  parse.c
 
 ODIR = obj
 OBJ = $(addprefix $(ODIR)/,$(SRC:.c=.o))

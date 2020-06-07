@@ -3,6 +3,8 @@
 !src/*.c
 !include/
 !include/*.h
+!libgnl/
+!mlx/
 !test.c
 !Makefile
 !.gitignore
