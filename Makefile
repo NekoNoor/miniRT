@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/06/12 15:51:08 by nschat        ########   odam.nl          #
+#    Updated: 2020/06/12 16:10:35 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,10 +41,10 @@ $(ODIR)/%.o: %.c $(HDR)
 	@mkdir -p $(ODIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-lib/libmlx/libmlx.dylib:
+$(LDIR)/libmlx/libmlx.dylib:
 	$(MAKE) -C lib/libmlx
 
-lib/libgnl/libgnl.a:
+$(LDIR)/libgnl/libgnl.a:
 	$(MAKE) -C lib/libgnl
 
 clean:

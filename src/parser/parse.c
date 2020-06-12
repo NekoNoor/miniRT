@@ -6,10 +6,6 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/05/27 13:09:55 by nschat        ########   odam.nl         */
+/*   Updated: 2020/06/12 16:11:40 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
-
-t_parsed	*parse(char **lines)
-{
-}
