@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/06/12 16:10:35 by nschat        ########   odam.nl          #
+#    Updated: 2020/06/15 15:48:50 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ $(NAME): $(OBJ) $(LIBS)
 
 $(ODIR)/%.o: %.c $(HDR)
 	@mkdir -p $(ODIR)
+	@mkdir -p $(ODIR)/parser
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(LDIR)/libmlx/libmlx.dylib:
