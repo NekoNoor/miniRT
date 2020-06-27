@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/06/25 08:53:28 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 14:49:22 by nschat        ########   odam.nl         */
+/*   Updated: 2020/06/27 14:53:04 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 #include <stdio.h> //
 
-void	render(t_mlx_data		*data)
+void	render(t_mlx_data *data)
 {
 	unsigned int	x;
 	unsigned int	y;
