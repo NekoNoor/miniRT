@@ -6,13 +6,14 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:08:44 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 14:05:53 by nschat        ########   odam.nl         */
+/*   Updated: 2020/06/27 14:48:56 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> //
-#include "parser.h"
 #include "renderer.h"
+#include "parser.h"
+
+#include <stdio.h> //
 
 int	main(int ac, char **av)
 {

@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/06/25 08:53:28 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 14:15:50 by nschat        ########   odam.nl         */
+/*   Updated: 2020/06/27 14:49:22 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "utils.h"
 #include <stdlib.h>
 #include <mlx.h>
+
 #include <stdio.h> //
 
 void	render(t_mlx_data		*data)
