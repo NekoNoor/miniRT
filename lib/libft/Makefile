@@ -6,13 +6,14 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/29 17:30:18 by nschat        #+#    #+#                  #
-#    Updated: 2020/06/27 13:58:45 by nschat        ########   odam.nl          #
+#    Updated: 2020/06/27 14:46:30 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I include
 
+HDR = include/libft.h
 SRC = ft_atoi.c \
 	  ft_isdigit.c \
 	  ft_isspace.c \
@@ -25,6 +26,7 @@ SRC = ft_atoi.c \
 	  ft_lstmap.c \
 	  ft_lstnew.c \
 	  ft_lstsize.c
+
 ODIR = obj
 OBJ = $(addprefix $(ODIR)/,$(SRC:.c=.o))
 
@@ -39,7 +41,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(AR) rcs $@ $^
 
-$(ODIR)/%.o: %.c
+$(ODIR)/%.o: %.c $(HDR)
 	@mkdir -p $(ODIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
