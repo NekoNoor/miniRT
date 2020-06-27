@@ -1,37 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   file.c                                             :+:    :+:            */
+/*   ft_lstadd_front_bonus.c                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 13:55:39 by nschat        ########   odam.nl         */
+/*   Created: 2019/11/06 13:08:37 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/17 15:44:09 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
 #include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
-t_list	*get_lines(const char *path)
+void	ft_lstadd_front(t_list **alst, t_list *new)
 {
-	t_list			*head;
-	char			*line;
-	int				ret;
-	int				fd;
-
-	head = NULL;
-	fd = open(path, O_RDONLY);
-	ret = 1;
-	while (ret == 1)
-	{
-		line = NULL;
-		ret = get_next_line(fd, &line);
-		ft_lstadd_back(&head, ft_lstnew(line));
-	}
-	close(fd);
-	return (head);
+	if (alst == NULL || new == NULL)
+		return ;
+	new->next = *alst;
+	*alst = new;
 }

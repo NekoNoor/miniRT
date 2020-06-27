@@ -1,3 +1,4 @@
--Ilib/libgnl
--Ilib/libmlx
--Iinclude
+-I include
+-I lib/libmlx
+-I lib/libgnl
+-I lib/libft/include

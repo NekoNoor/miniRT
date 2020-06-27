@@ -1,37 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   file.c                                             :+:    :+:            */
+/*   color.c                                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 13:55:39 by nschat        ########   odam.nl         */
+/*   Created: 2020/06/26 15:17:16 by nschat        #+#    #+#                 */
+/*   Updated: 2020/06/26 15:45:54 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-
-t_list	*get_lines(const char *path)
+int	pack_trgb(int t, int r, int g, int b)
 {
-	t_list			*head;
-	char			*line;
-	int				ret;
-	int				fd;
+	return (t << 24 | r << 16 | g << 8 | b);
+}
 
-	head = NULL;
-	fd = open(path, O_RDONLY);
-	ret = 1;
-	while (ret == 1)
-	{
-		line = NULL;
-		ret = get_next_line(fd, &line);
-		ft_lstadd_back(&head, ft_lstnew(line));
-	}
-	close(fd);
-	return (head);
+int	unpack_t(int trgb)
+{
+	return (trgb & 0xFF);
+}
+
+int	unpack_r(int trgb)
+{
+	return (trgb & 0xFF00);
+}
+
+int	unpack_g(int trgb)
+{
+	return (trgb & 0xFF0000);
+}
+
+int	unpack_b(int trgb)
+{
+	return (trgb & 0xFF000000);
 }

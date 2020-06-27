@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   file.c                                             :+:    :+:            */
+/*   renderer.h                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 13:55:39 by nschat        ########   odam.nl         */
+/*   Created: 2020/06/25 09:49:34 by nschat        #+#    #+#                 */
+/*   Updated: 2020/06/26 16:46:01 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
+#ifndef RENDERER_H
+# define RENDERER_H
 
-t_list	*get_lines(const char *path)
+typedef struct	s_mlx_data
 {
-	t_list			*head;
-	char			*line;
-	int				ret;
-	int				fd;
+	unsigned int	width;
+	unsigned int	height;
+	void			*mlx;
+	void			*win;
+	void			*img;
+	char			*buf;
+	int				bpp;
+	int				size_line;
+	int				endian;
+}				t_mlx_data;
 
-	head = NULL;
-	fd = open(path, O_RDONLY);
-	ret = 1;
-	while (ret == 1)
-	{
-		line = NULL;
-		ret = get_next_line(fd, &line);
-		ft_lstadd_back(&head, ft_lstnew(line));
-	}
-	close(fd);
-	return (head);
-}
+void			render(t_mlx_data *data);
+
+#endif

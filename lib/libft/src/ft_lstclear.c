@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   minirt.h                                           :+:    :+:            */
+/*   ft_lstclear_bonus.c                                :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/05/27 12:32:36 by nschat        #+#    #+#                 */
-/*   Updated: 2020/05/27 12:33:51 by nschat        ########   odam.nl         */
+/*   Created: 2019/11/06 13:08:42 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/26 12:23:32 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINIRT_H
-# define MINIRT_H
+#include "libft.h"
 
-char	*read_file(const char *filename);
-
-#endif
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	if (lst == NULL || del == NULL)
+		return ;
+	while (*lst)
+	{
+		ft_lstdelone(*lst, del);
+		*lst = (*lst)->next;
+	}
+	*lst = NULL;
+}

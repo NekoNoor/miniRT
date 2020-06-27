@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   file.c                                             :+:    :+:            */
+/*   ft_lstmap_bonus.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 13:55:39 by nschat        ########   odam.nl         */
+/*   Created: 2019/11/06 13:09:08 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/17 16:07:40 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
 #include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
-t_list	*get_lines(const char *path)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list			*head;
-	char			*line;
-	int				ret;
-	int				fd;
+	t_list	*node;
+	t_list	*head;
 
+	if (f == NULL)
+		return (NULL);
 	head = NULL;
-	fd = open(path, O_RDONLY);
-	ret = 1;
-	while (ret == 1)
+	while (lst)
 	{
-		line = NULL;
-		ret = get_next_line(fd, &line);
-		ft_lstadd_back(&head, ft_lstnew(line));
+		node = ft_lstnew((*f)(lst->content));
+		if (node == NULL)
+		{
+			ft_lstclear(&head, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&head, node);
+		lst = lst->next;
 	}
-	close(fd);
 	return (head);
 }

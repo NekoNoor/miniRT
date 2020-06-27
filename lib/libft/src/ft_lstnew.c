@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   file.c                                             :+:    :+:            */
+/*   ft_lstnew_bonus.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 13:55:39 by nschat        ########   odam.nl         */
+/*   Created: 2019/11/06 13:09:12 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/21 14:08:01 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
 #include "libft.h"
 #include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
-t_list	*get_lines(const char *path)
+t_list	*ft_lstnew(void *content)
 {
-	t_list			*head;
-	char			*line;
-	int				ret;
-	int				fd;
+	t_list	*new;
 
-	head = NULL;
-	fd = open(path, O_RDONLY);
-	ret = 1;
-	while (ret == 1)
-	{
-		line = NULL;
-		ret = get_next_line(fd, &line);
-		ft_lstadd_back(&head, ft_lstnew(line));
-	}
-	close(fd);
-	return (head);
+	new = (t_list *)malloc(sizeof(t_list));
+	if (new == NULL)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
