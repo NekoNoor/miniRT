@@ -1,3 +1,4 @@
+.clangd/
 lib/libft/libft.a
 lib/libft/obj/
 lib/libgnl/libgnl.a
