@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   color.c                                            :+:    :+:            */
+/*   ft_strlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/06/26 15:17:16 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 15:29:10 by nschat        ########   odam.nl         */
+/*   Created: 2020/07/14 17:06:21 by nschat        #+#    #+#                 */
+/*   Updated: 2020/07/14 17:11:37 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	pack_trgb(int t, int r, int g, int b)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	return (t << 24 | r << 16 | g << 8 | b);
+	size_t	len;
+
+	len = 0;
+	while (s[len] != '\0')
+		len++;
+	return (len);
 }

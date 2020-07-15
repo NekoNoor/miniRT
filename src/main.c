@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:08:44 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/29 17:45:02 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/14 17:24:28 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,12 @@ int	main(int ac, char **av)
 	if (ac < 2)
 		return (1);
 	lines = get_lines(av[1]);
+	if (lines == NULL)
+		return (1);
 	copy = lines; //
 	while (copy != NULL) //
 	{
-		printf("%s\n", (char *)copy->content); //
+		printf("content: %s\n", (char *)copy->content); //
 		copy = copy->next; //
 	} //
 	data = parse_lines(lines);

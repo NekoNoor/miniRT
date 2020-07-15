@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/06/29 18:12:28 by nschat        ########   odam.nl          #
+#    Updated: 2020/07/15 17:34:39 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,13 +15,11 @@ INCLUDES = -I include -I lib/libmlx -I lib/libgnl -I lib/libft/include
 CFLAGS = -Wall -Wextra -Werror $(INCLUDES)
 LDFLAGS = -L lib/libmlx -L lib/libgnl -L lib/libft -lmlx -lgnl -lft -framework OpenGL -framework AppKit
 
-HDR = utils.h \
-	  parser.h \
+HDR = parser.h \
 	  renderer.h
 SRC = renderer/render.c \
 	  parser/parse.c \
 	  parser/file.c \
-	  utils/color.c \
 	  main.c
 
 ODIR = obj
@@ -46,7 +44,6 @@ $(NAME): $(OBJ) $(LIBS) libmlx.dylib
 
 $(ODIR)/%.o: %.c $(HDR)
 	@mkdir -p $(ODIR)
-	@mkdir -p $(ODIR)/utils
 	@mkdir -p $(ODIR)/parser
 	@mkdir -p $(ODIR)/renderer
 	$(CC) $(CFLAGS) -c $< -o $@

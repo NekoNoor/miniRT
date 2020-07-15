@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/29 17:30:18 by nschat        #+#    #+#                  #
-#    Updated: 2020/06/29 18:31:38 by nschat        ########   odam.nl          #
+#    Updated: 2020/07/14 17:09:30 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SRC = ft_atoi.c \
 	  ft_lstlast.c \
 	  ft_lstmap.c \
 	  ft_lstnew.c \
-	  ft_lstsize.c
+	  ft_lstsize.c \
+	  ft_strlen.c
 
 ODIR = obj
 OBJ = $(addprefix $(ODIR)/,$(SRC:.c=.o))

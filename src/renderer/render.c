@@ -6,12 +6,11 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/06/25 08:53:28 by nschat        #+#    #+#                 */
-/*   Updated: 2020/06/27 14:53:04 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/10 18:32:53 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "renderer.h"
-#include "utils.h"
 #include <stdlib.h>
 #include <mlx.h>
 
@@ -35,7 +34,7 @@ void	render(t_mlx_data *data)
 		x = 0;
 		while (x < data->width)
 		{
-			int_buf[x + y * (data->size_line / sizeof(int))] = pack_trgb(0, 0xFF, 0x7F, 0x2A);
+			int_buf[x + y * (data->size_line / sizeof(int))] = 0x00FF7F2A; //pack_trgb(0, 0xFF, 0x7F, 0x2A);
 			x++;
 		}
 		y++;
