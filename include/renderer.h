@@ -6,12 +6,21 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/06/25 09:49:34 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/16 18:07:42 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/16 18:30:01 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RENDERER_H
 # define RENDERER_H
+
+typedef	struct	s_mlx_img
+{
+	void	*img;
+	char	*buf;
+	int		bpp;
+	int		size_line;
+	int		endian;
+}				t_mlx_img;
 
 typedef struct	s_mlx_data
 {
@@ -19,11 +28,7 @@ typedef struct	s_mlx_data
 	unsigned int	height;
 	void			*mlx;
 	void			*win;
-	void			*img;
-	char			*buf;
-	int				bpp;
-	int				size_line;
-	int				endian;
+	t_mlx_img		img;
 }				t_mlx_data;
 
 typedef struct	s_vec
@@ -32,6 +37,12 @@ typedef struct	s_vec
 	double	y;
 	double	z;
 }				t_vec;
+
+typedef struct	s_ray
+{
+	t_vec	orig;
+	t_vec	dir;
+}				t_ray;
 
 typedef struct	s_a
 {
@@ -103,7 +114,7 @@ typedef union	u_obj
 
 typedef struct	s_objects
 {
-	char				type;
+	char				*identifier;
 	t_obj				obj;
 	struct s_objects	*next;
 }				t_objects;

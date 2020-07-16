@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/16 18:22:28 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/16 18:33:07 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,35 @@
 #include "libft.h"
 #include <stdlib.h>
 
-char		*get_identifier(char *s) // R,A,c,l,sp,pl,cy,tr
-{
-}
-
-t_vec		get_vector(char *s)
-{
-}
-
-double		get_ratio(char *s) // 0.0-1.0
-{
-}
-
-int			get_fov(char *s) // 0-180
-{
-}
-
-int			get_color(char *s) // 0-255,0-255,0-255
-{
-}
-
-double		get_double(char *s)
-{
-}
-
-char		**get_fields(char *line) // use above functions depending on identifier
-{
-	
-}
+/*
+ *char		*get_identifier(char *s) // R,A,c,l,sp,pl,cy,tr
+ *{
+ *}
+ *
+ *t_vec		get_vector(char *s)
+ *{
+ *}
+ *
+ *double		get_ratio(char *s) // 0.0-1.0
+ *{
+ *}
+ *
+ *int			get_fov(char *s) // 0-180
+ *{
+ *}
+ *
+ *int			get_color(char *s) // 0-255,0-255,0-255
+ *{
+ *}
+ *
+ *double		get_double(char *s)
+ *{
+ *}
+ *
+ *char		**get_fields(char *line) // use above functions depending on identifier
+ *{
+ *}
+ */
 
 t_mlx_data	*parse_lines(t_list *lines)
 {
