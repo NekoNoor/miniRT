@@ -6,11 +6,11 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/07/15 17:34:39 by nschat        ########   odam.nl          #
+#    Updated: 2020/07/16 19:26:59 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-CC = clang
+CC = gcc
 INCLUDES = -I include -I lib/libmlx -I lib/libgnl -I lib/libft/include
 CFLAGS = -Wall -Wextra -Werror $(INCLUDES)
 LDFLAGS = -L lib/libmlx -L lib/libgnl -L lib/libft -lmlx -lgnl -lft -framework OpenGL -framework AppKit

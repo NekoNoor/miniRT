@@ -6,11 +6,11 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/05/31 21:17:26 by nschat        #+#    #+#                  #
-#    Updated: 2020/06/27 14:46:55 by nschat        ########   odam.nl          #
+#    Updated: 2020/07/16 19:27:34 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-CC = clang
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 HDR = get_next_line.h

@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/16 18:08:23 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/16 18:45:13 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 #include <stdio.h> //
 
-static int	correct_extension(const char *path)
+static int	check_extension(const char *path)
 {
 	int	ret;
 
@@ -39,7 +39,7 @@ t_list		*get_lines(const char *path)
 	int				ret;
 	int				fd;
 
-	if (correct_extension(path) == 0)
+	if (check_extension(path) == 0)
 	{
 		printf("error!\n"); //
 		exit(1);
