@@ -6,13 +6,42 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/11 16:35:52 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/16 18:19:53 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "renderer.h"
 #include "libft.h"
 #include <stdlib.h>
+
+char		*get_identifier(char *s)
+{
+}
+
+t_vec		get_vector(char *s)
+{
+}
+
+double		get_ratio(char *s) // 0.0 - 1.0
+{
+}
+
+int			get_fov(char *s) // 0 - 180
+{
+}
+
+int			get_color(char *s)
+{
+}
+
+double		get_double(char *s)
+{
+}
+
+char		**get_fields(char *line)
+{
+	
+}
 
 t_mlx_data	*parse_lines(t_list *lines)
 {

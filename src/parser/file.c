@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/14 17:26:41 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/16 18:08:23 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ static int	correct_extension(const char *path)
 	ret = 1;
 	while (*path != '\0')
 		path++;
-	if (ft_strlen(path) < 3 && (*(path - 3) != '.' || *(path - 2) != 'r' || *(path - 1) != 't'))
+	if (ft_strlen(path) < 3 && 
+			(*(path - 3) != '.' || *(path - 2) != 'r' || *(path - 1) != 't'))
 		ret = 0;
 	return (ret);
 }
