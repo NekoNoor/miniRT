@@ -6,13 +6,12 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/16 18:45:13 by nschat        ########   odam.nl         */
+/*   Updated: 2020/07/16 19:40:04 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include "libft.h"
-#include <sys/errno.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -41,13 +40,14 @@ t_list		*get_lines(const char *path)
 
 	if (check_extension(path) == 0)
 	{
-		printf("error!\n"); //
+		write(0, "Error\nFile extension is not \".rt\"\n", 34); //
 		exit(1);
 	}
 	head = NULL;
 	fd = open(path, O_RDONLY);
-	if (errno != 0)
+	if (fd == -1)
 	{
+		write(0, "Error\n", 6); //
 		perror(NULL);
 		exit(1);
 	}
@@ -57,7 +57,8 @@ t_list		*get_lines(const char *path)
 		line = NULL;
 		ret = get_next_line(fd, &line);
 		printf("ret: %i, line: %s\n", ret, line); //
-		ft_lstadd_back(&head, ft_lstnew(line));
+		if (ret == 1)
+			ft_lstadd_back(&head, ft_lstnew(line));
 	}
 	close(fd);
 	return (head);
