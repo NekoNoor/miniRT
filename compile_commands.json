@@ -81,6 +81,28 @@
    "-I",
    "lib/libft/include",
    "-c",
+   "src/error/puterror.c",
+   "-o",
+   "obj/error/puterror.o"
+  ],
+  "file": "src/error/puterror.c"
+ },
+ {
+  "directory": "/home/cuddles/Projects/Codam/miniRT",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-I",
+   "lib/libmlx-linux",
+   "-I",
+   "lib/libgnl",
+   "-I",
+   "lib/libft/include",
+   "-c",
    "src/main.c",
    "-o",
    "obj/main.o"

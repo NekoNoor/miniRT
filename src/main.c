@@ -6,10 +6,11 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:08:44 by nschat        #+#    #+#                 */
-/*   Updated: 2020/07/14 17:24:28 by nschat        ########   odam.nl         */
+/*   Updated: 2020/09/10 00:35:22 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "error.h"
 #include "renderer.h"
 #include "parser.h"
 
@@ -22,7 +23,10 @@ int	main(int ac, char **av)
 	t_list		*copy; //
 
 	if (ac < 2)
+	{
+		puterror("No \".rt\" file provided");
 		return (1);
+	}
 	lines = get_lines(av[1]);
 	if (lines == NULL)
 		return (1);

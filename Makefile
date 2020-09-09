@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/09/09 10:07:14 by cuddles       ########   odam.nl          #
+#    Updated: 2020/09/10 00:33:17 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ HDR = parser.h \
 SRC = renderer/render.c \
 	  parser/parse.c \
 	  parser/file.c \
+	  error/puterror.c \
 	  main.c
 
 ODIR = obj
@@ -64,6 +65,7 @@ $(ODIR)/%.o: %.c $(HDR)
 	@mkdir -p $(ODIR)
 	@mkdir -p $(ODIR)/parser
 	@mkdir -p $(ODIR)/renderer
+	@mkdir -p $(ODIR)/error
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(LDIR)/libmlx-$(PLATFORM)/libmlx.a:
