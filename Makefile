@@ -6,14 +6,28 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/07/16 19:26:59 by nschat        ########   odam.nl          #
+#    Updated: 2020/09/09 10:07:14 by cuddles       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
+UNAME = $(shell uname)
+
+ifeq ($(UNAME), Linux)
+	PLATFORM = linux
+endif
+ifeq ($(UNAME), Darwin)
+	PLATFORM = macos
+endif
+
 CC = gcc
-INCLUDES = -I include -I lib/libmlx -I lib/libgnl -I lib/libft/include
+INCLUDES = -I include -I lib/libmlx-$(PLATFORM) -I lib/libgnl -I lib/libft/include
 CFLAGS = -Wall -Wextra -Werror $(INCLUDES)
-LDFLAGS = -L lib/libmlx -L lib/libgnl -L lib/libft -lmlx -lgnl -lft -framework OpenGL -framework AppKit
+LDFLAGS = -L lib/libmlx-$(PLATFORM) -L lib/libgnl -L lib/libft -lmlx -lgnl -lft
+ifeq ($(UNAME), Linux)
+	LDFLAGS += -lXext -lX11 -lm -lz
+else
+	LDFLAGS += -framework OpenGL -framework AppKit
+endif
 
 HDR = parser.h \
 	  renderer.h
@@ -26,9 +40,13 @@ ODIR = obj
 OBJ = $(addprefix $(ODIR)/,$(SRC:.c=.o))
 
 LDIR = lib
-LIBS = $(LDIR)/libmlx/libmlx.dylib \
-	   $(LDIR)/libgnl/libgnl.a \
+LIBS = $(LDIR)/libgnl/libgnl.a \
 	   $(LDIR)/libft/libft.a
+ifeq ($(UNAME), Linux)
+	LIBS += $(LDIR)/libmlx-$(PLATFORM)/libmlx.a
+else
+	LIBS += $(LDIR)/libmlx-$(PLATFORM)/libmlx.dylib
+endif
 
 NAME = miniRT
 
@@ -39,7 +57,7 @@ vpath %.h include
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(LIBS) libmlx.dylib
+$(NAME): $(OBJ) $(LIBS)
 	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
 
 $(ODIR)/%.o: %.c $(HDR)
@@ -48,11 +66,12 @@ $(ODIR)/%.o: %.c $(HDR)
 	@mkdir -p $(ODIR)/renderer
 	$(CC) $(CFLAGS) -c $< -o $@
 
-libmlx.dylib: $(LDIR)/libmlx/libmlx.dylib
-	cp $(LDIR)/libmlx/libmlx.dylib $@
-
-$(LDIR)/libmlx/libmlx.dylib:
+$(LDIR)/libmlx-$(PLATFORM)/libmlx.a:
 	$(MAKE) -C $(dir $@)
+
+$(LDIR)/libmlx-$(PLATFORM)/libmlx.dylib:
+	$(MAKE) -C $(dir $@)
+	cp $@ .
 
 $(LDIR)/libgnl/libgnl.a:
 	$(MAKE) -C $(dir $@)
@@ -61,7 +80,7 @@ $(LDIR)/libft/libft.a:
 	$(MAKE) -C $(dir $@)
 
 clean:
-	$(MAKE) -C lib/libmlx clean
+	$(MAKE) -C lib/libmlx-$(PLATFORM) clean
 	$(MAKE) -C lib/libgnl clean
 	$(MAKE) -C lib/libft clean
 	$(RM) -r $(ODIR)
@@ -69,6 +88,5 @@ clean:
 fclean: clean
 	$(RM) $(LIBS)
 	$(RM) $(NAME)
-	$(RM) libmlx.dylib
 
 re: fclean all
