@@ -1,72 +1,6 @@
 [
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-I",
-   "lib/libmlx-linux",
-   "-I",
-   "lib/libgnl",
-   "-I",
-   "lib/libft/include",
-   "-c",
-   "src/renderer/render.c",
-   "-o",
-   "obj/renderer/render.o"
-  ],
-  "file": "src/renderer/render.c"
- },
- {
-  "directory": "/home/cuddles/Projects/Codam/miniRT",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-I",
-   "lib/libmlx-linux",
-   "-I",
-   "lib/libgnl",
-   "-I",
-   "lib/libft/include",
-   "-c",
-   "src/parser/parse.c",
-   "-o",
-   "obj/parser/parse.o"
-  ],
-  "file": "src/parser/parse.c"
- },
- {
-  "directory": "/home/cuddles/Projects/Codam/miniRT",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-I",
-   "lib/libmlx-linux",
-   "-I",
-   "lib/libgnl",
-   "-I",
-   "lib/libft/include",
-   "-c",
-   "src/parser/file.c",
-   "-o",
-   "obj/parser/file.o"
-  ],
-  "file": "src/parser/file.c"
- },
- {
-  "directory": "/home/cuddles/Projects/Codam/miniRT",
+  "directory": "/home/cuddles/Codam/Projects/miniRT",
   "arguments": [
    "gcc",
    "-Wall",
@@ -88,7 +22,125 @@
   "file": "src/error/puterror.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT",
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_wait_first_expose.o",
+   "mlx_int_wait_first_expose.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_wait_first_expose.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_new_image.o",
+   "mlx_new_image.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_new_image.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-I/usr/include",
+   "-O3",
+   "-I..",
+   "-o",
+   "main.o",
+   "main.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux/test",
+  "file": "main.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_get_visual.o",
+   "mlx_int_get_visual.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_get_visual.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_init.o",
+   "mlx_init.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_init.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_get_data_addr.o",
+   "mlx_get_data_addr.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_get_data_addr.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_anti_resize_win.o",
+   "mlx_int_anti_resize_win.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_anti_resize_win.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_flush_event.o",
+   "mlx_flush_event.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_flush_event.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_rgb.o",
+   "mlx_rgb.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_rgb.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT",
   "arguments": [
    "gcc",
    "-Wall",
@@ -110,7 +162,333 @@
   "file": "src/main.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libgnl",
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_str_to_wordtab.o",
+   "mlx_int_str_to_wordtab.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_str_to_wordtab.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_mouse_hook.o",
+   "mlx_mouse_hook.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_mouse_hook.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_xpm.o",
+   "mlx_xpm.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_xpm.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_destroy_window.o",
+   "mlx_destroy_window.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_destroy_window.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_loop.o",
+   "mlx_loop.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_loop.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_hook.o",
+   "mlx_hook.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_hook.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_png.o",
+   "mlx_png.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_png.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_string_put.o",
+   "mlx_string_put.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_string_put.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_set_win_event_mask.o",
+   "mlx_int_set_win_event_mask.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_set_win_event_mask.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-I",
+   "lib/libmlx-linux",
+   "-I",
+   "lib/libgnl",
+   "-I",
+   "lib/libft/include",
+   "-c",
+   "src/parser/parse.c",
+   "-o",
+   "obj/parser/parse.o"
+  ],
+  "file": "src/parser/parse.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_get_color_value.o",
+   "mlx_get_color_value.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_get_color_value.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_destroy_image.o",
+   "mlx_destroy_image.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_destroy_image.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_pixel_put.o",
+   "mlx_pixel_put.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_pixel_put.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-I",
+   "lib/libmlx-linux",
+   "-I",
+   "lib/libgnl",
+   "-I",
+   "lib/libft/include",
+   "-c",
+   "src/renderer/render.c",
+   "-o",
+   "obj/renderer/render.o"
+  ],
+  "file": "src/renderer/render.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_param_event.o",
+   "mlx_int_param_event.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_param_event.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_expose_hook.o",
+   "mlx_expose_hook.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_expose_hook.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_key_hook.o",
+   "mlx_key_hook.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_key_hook.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_new_window.o",
+   "mlx_new_window.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_new_window.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_loop_hook.o",
+   "mlx_loop_hook.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_loop_hook.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_int_do_nothing.o",
+   "mlx_int_do_nothing.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_int_do_nothing.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_clear_window.o",
+   "mlx_clear_window.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_clear_window.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-I",
+   "lib/libmlx-linux",
+   "-I",
+   "lib/libgnl",
+   "-I",
+   "lib/libft/include",
+   "-c",
+   "src/parser/file.c",
+   "-o",
+   "obj/parser/file.o"
+  ],
+  "file": "src/parser/file.c"
+ },
+ {
+  "arguments": [
+   "gcc",
+   "-c",
+   "-O3",
+   "-I/usr/include",
+   "-o",
+   "mlx_put_image_to_window.o",
+   "mlx_put_image_to_window.c"
+  ],
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
+  "file": "mlx_put_image_to_window.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libgnl",
   "arguments": [
    "gcc",
    "-Wall",
@@ -124,7 +502,7 @@
   "file": "get_next_line.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libgnl",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libgnl",
   "arguments": [
    "gcc",
    "-Wall",
@@ -138,7 +516,7 @@
   "file": "get_next_line_utils.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -154,7 +532,7 @@
   "file": "src/ft_atoi.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -170,7 +548,7 @@
   "file": "src/ft_isdigit.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -186,7 +564,7 @@
   "file": "src/ft_isspace.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -202,7 +580,7 @@
   "file": "src/ft_lstadd_back.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -218,7 +596,7 @@
   "file": "src/ft_lstadd_front.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -234,7 +612,7 @@
   "file": "src/ft_lstclear.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -250,7 +628,7 @@
   "file": "src/ft_lstdelone.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -266,7 +644,7 @@
   "file": "src/ft_lstiter.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -282,7 +660,7 @@
   "file": "src/ft_lstlast.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -298,7 +676,7 @@
   "file": "src/ft_lstmap.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -314,7 +692,7 @@
   "file": "src/ft_lstnew.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -330,7 +708,7 @@
   "file": "src/ft_lstsize.c"
  },
  {
-  "directory": "/home/cuddles/Projects/Codam/miniRT/lib/libft",
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
