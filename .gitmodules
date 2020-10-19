@@ -1,9 +1,9 @@
 [submodule "lib/libft"]
 	path = lib/libft
-	url = git@gitlab.com:NekoNoor/libft.git
+	url = git@github.com:NekoNoor/Libft.git
 [submodule "lib/libgnl"]
 	path = lib/libgnl
-	url = git@gitlab.com:NekoNoor/get_next_line.git
+	url = git@github.com:NekoNoor/get_next_line.git
 [submodule "lib/libftprintf"]
 	path = lib/libftprintf
-	url = git@gitlab.com:NekoNoor/ft_printf.git
+	url = git@github.com:NekoNoor/ft_printf.git
