@@ -6,49 +6,51 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/10/19 14:18:20 by nschat        ########   odam.nl         */
+/*   Updated: 2020/10/19 17:12:35 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "renderer.h"
+#include "parser.h"
 #include "libft.h"
 #include "error.h"
 #include <stdlib.h>
 
-int				ft_strcmp(const char *s1, const char *s2)
+/*
+** u = unsigned int	(unsigned int, [0,>])
+** r = ratio 		(double, [0,1])
+** c = rgb color 	(unsigned int, per byte [0,255])
+** x = xyz coords 	(3 doubles, [<,>])
+** v = vector 		(3 doubles, [-1,1])
+** f = fov 			(unsigned int, [0,180])
+** d = double 		(double, [<,>])
+*/
+
+const t_table	g_ident_table[9] = {
+	{"R", 2, "uu"},
+	{"A", 2, "rc"},
+	{"c", 3, "xvf"},
+	{"l", 3, "xrc"},
+	{"sp", 3, "xdc"},
+	{"pl", 3, "xvc"},
+	{"sq", 4, "xvdc"},
+	{"cy", 5, "xvddc"},
+	{"tr", 4, "xxxc"}
+};
+
+static int		get_num_fields(char *ident)
 {
-	while (*s1 == *s2)
+	size_t	i;
+
+	i = 0;
+	while (i < sizeof(g_ident_table) / sizeof(t_table))
 	{
-		if (*s1 == '\0')
-			break ;
-		s2++;
-		s1++;
+		if (ft_strcmp(ident, g_ident_table[i].ident))
+			return (g_ident_table[i].num_fields);
+		i++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
-}
-
-static int		valid_ident(char *ident)
-{
-	int	ret;
-
-	ret = 0;
-	if (ft_strcmp("R", ident))
-		ret = 1;
-	if (ft_strcmp("A", ident))
-		ret = 1;
-	if (ft_strcmp("c", ident))
-		ret = 1;
-	if (ft_strcmp("l", ident))
-		ret = 1;
-	if (ft_strcmp("sp", ident))
-		ret = 1;
-	if (ft_strcmp("pl", ident))
-		ret = 1;
-	if (ft_strcmp("cy", ident))
-		ret = 1;
-	if (ft_strcmp("tr", ident))
-		ret = 1;
-	return (ret);
+	return (0);
 }
 
 static size_t	ft_strlen_space(const char *s)
@@ -61,7 +63,7 @@ static size_t	ft_strlen_space(const char *s)
 	return (len);
 }
 
-char		*get_identifier(char *s) // R,A,c,l,sp,pl,cy,tr
+char		*get_identifier(char *s) // R,A,c,l,sp,pl,sq,cy,tr
 {
 	char	*ident;
 	size_t	len;
@@ -69,12 +71,6 @@ char		*get_identifier(char *s) // R,A,c,l,sp,pl,cy,tr
 	len = ft_strlen_space(s);
 	ident = malloc(sizeof(char) * (len + 1));
 	ft_strlcpy(ident, s, len + 1);
-	if (!valid_ident(ident))
-	{
-		puterror(__FILE__, __LINE__, "invalid identifier");
-		free(ident);
-		return (NULL);
-	}
 	return (ident);
 }
 
@@ -100,15 +96,23 @@ char		*get_identifier(char *s) // R,A,c,l,sp,pl,cy,tr
  *}
  */
 
-/*
- *char		**get_fields(char *line) // use above functions depending on identifier
- *{
- *    char	*ident;
- *
- *    ident = get_identifier(line);
- *    if (ft_strcmp(ident, "R") == 0)
- *}
- */
+t_field		*get_fields(char *line) // use above functions depending on identifier
+{
+	t_field	*fields;
+	char	*ident;
+	int		num_fields;
+
+	ident = get_identifier(line);
+	num_fields = get_num_fields(ident);
+	if (num_fields == 0)
+	{
+		puterror(__FILE__, __LINE__, "invalid identifier");
+		free(ident);
+		return (NULL);
+	}
+	fields = malloc(sizeof(t_field) * (num_fields + 1));
+	return (fields);
+}
 
 t_mlx_data	*parse_lines(t_list *lines)
 {
