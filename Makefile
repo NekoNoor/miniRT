@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/09/10 00:33:17 by nschat        ########   odam.nl          #
+#    Updated: 2020/10/19 13:59:58 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,9 +20,9 @@ ifeq ($(UNAME), Darwin)
 endif
 
 CC = gcc
-INCLUDES = -I include -I lib/libmlx-$(PLATFORM) -I lib/libgnl -I lib/libft/include
+INCLUDES = -I include -I lib/libmlx-$(PLATFORM) -I lib/libftprintf/include -I lib/libgnl -I lib/libft/include
 CFLAGS = -Wall -Wextra -Werror $(INCLUDES)
-LDFLAGS = -L lib/libmlx-$(PLATFORM) -L lib/libgnl -L lib/libft -lmlx -lgnl -lft
+LDFLAGS = -L lib/libmlx-$(PLATFORM) -L lib/libftprintf -L lib/libgnl -L lib/libft -lmlx -lftprintf -lgnl -lft
 ifeq ($(UNAME), Linux)
 	LDFLAGS += -lXext -lX11 -lm -lz
 else
@@ -41,7 +41,8 @@ ODIR = obj
 OBJ = $(addprefix $(ODIR)/,$(SRC:.c=.o))
 
 LDIR = lib
-LIBS = $(LDIR)/libgnl/libgnl.a \
+LIBS = $(LDIR)/libftprintf/libftprintf.a \
+	   $(LDIR)/libgnl/libgnl.a \
 	   $(LDIR)/libft/libft.a
 ifeq ($(UNAME), Linux)
 	LIBS += $(LDIR)/libmlx-$(PLATFORM)/libmlx.a
@@ -74,6 +75,9 @@ $(LDIR)/libmlx-$(PLATFORM)/libmlx.a:
 $(LDIR)/libmlx-$(PLATFORM)/libmlx.dylib:
 	$(MAKE) -C $(dir $@)
 	cp $@ .
+
+$(LDIR)/libftprintf/libftprintf.a:
+	$(MAKE) -C $(dir $@)
 
 $(LDIR)/libgnl/libgnl.a:
 	$(MAKE) -C $(dir $@)

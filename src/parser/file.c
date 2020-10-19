@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 12:31:42 by nschat        #+#    #+#                 */
-/*   Updated: 2020/09/10 00:36:44 by nschat        ########   odam.nl         */
+/*   Updated: 2020/10/19 14:59:36 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,10 @@
 
 static int	check_extension(const char *path)
 {
-	int	ret;
+	size_t	len;
 
-	ret = 1;
-	while (*path != '\0')
-		path++;
-	if (ft_strlen(path) < 3 && 
-			(*(path - 3) != '.' || *(path - 2) != 'r' || *(path - 1) != 't'))
-		ret = 0;
-	return (ret);
+	len = ft_strlen(path);
+	return (ft_strcmp(path + len - 3, ".rt"));
 }
 
 t_list		*get_lines(const char *path)
@@ -39,16 +34,16 @@ t_list		*get_lines(const char *path)
 	int				ret;
 	int				fd;
 
-	if (check_extension(path) == 0)
+	if (check_extension(path) != 0)
 	{
-		puterror("File extension is not \".rt\"");
+		puterror(__FILE__, __LINE__, "file extension is not \".rt\"");
 		exit(1);
 	}
 	head = NULL;
 	fd = open(path, O_RDONLY);
 	if (fd == -1)
 	{
-		puterror("");
+		puterror(__FILE__, __LINE__, "opening file failed");
 		perror(NULL);
 		exit(1);
 	}

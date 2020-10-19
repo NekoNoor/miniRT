@@ -11,6 +11,8 @@
    "-I",
    "lib/libmlx-linux",
    "-I",
+   "lib/libftprintf/include",
+   "-I",
    "lib/libgnl",
    "-I",
    "lib/libft/include",
@@ -151,6 +153,8 @@
    "-I",
    "lib/libmlx-linux",
    "-I",
+   "lib/libftprintf/include",
+   "-I",
    "lib/libgnl",
    "-I",
    "lib/libft/include",
@@ -290,6 +294,8 @@
    "-I",
    "lib/libmlx-linux",
    "-I",
+   "lib/libftprintf/include",
+   "-I",
    "lib/libgnl",
    "-I",
    "lib/libft/include",
@@ -350,6 +356,8 @@
    "include",
    "-I",
    "lib/libmlx-linux",
+   "-I",
+   "lib/libftprintf/include",
    "-I",
    "lib/libgnl",
    "-I",
@@ -463,6 +471,8 @@
    "include",
    "-I",
    "lib/libmlx-linux",
+   "-I",
+   "lib/libftprintf/include",
    "-I",
    "lib/libgnl",
    "-I",
@@ -722,5 +732,693 @@
    "obj/ft_strlen.o"
   ],
   "file": "src/ft_strlen.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre.c",
+   "-o",
+   "obj/printf_mediocre.o"
+  ],
+  "file": "src/printf_mediocre.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_analyze.c",
+   "-o",
+   "obj/printf_mediocre_analyze.o"
+  ],
+  "file": "src/printf_mediocre_analyze.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_get.c",
+   "-o",
+   "obj/printf_mediocre_get.o"
+  ],
+  "file": "src/printf_mediocre_get.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_list.c",
+   "-o",
+   "obj/printf_mediocre_list.o"
+  ],
+  "file": "src/printf_mediocre_list.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_nbr.c",
+   "-o",
+   "obj/printf_mediocre_nbr.o"
+  ],
+  "file": "src/printf_mediocre_nbr.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_print.c",
+   "-o",
+   "obj/printf_mediocre_print.o"
+  ],
+  "file": "src/printf_mediocre_print.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_str.c",
+   "-o",
+   "obj/printf_mediocre_str.o"
+  ],
+  "file": "src/printf_mediocre_str.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/printf_mediocre_utils.c",
+   "-o",
+   "obj/printf_mediocre_utils.o"
+  ],
+  "file": "src/printf_mediocre_utils.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memccpy.c",
+   "-o",
+   "obj/ft_memccpy.o"
+  ],
+  "file": "src/ft_memccpy.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strcmp.c",
+   "-o",
+   "obj/ft_strcmp.o"
+  ],
+  "file": "src/ft_strcmp.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strlcpy.c",
+   "-o",
+   "obj/ft_strlcpy.o"
+  ],
+  "file": "src/ft_strlcpy.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_bzero.c",
+   "-o",
+   "obj/ft_bzero.o"
+  ],
+  "file": "src/ft_bzero.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_calloc.c",
+   "-o",
+   "obj/ft_calloc.o"
+  ],
+  "file": "src/ft_calloc.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isalnum.c",
+   "-o",
+   "obj/ft_isalnum.o"
+  ],
+  "file": "src/ft_isalnum.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isalpha.c",
+   "-o",
+   "obj/ft_isalpha.o"
+  ],
+  "file": "src/ft_isalpha.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isascii.c",
+   "-o",
+   "obj/ft_isascii.o"
+  ],
+  "file": "src/ft_isascii.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_islower.c",
+   "-o",
+   "obj/ft_islower.o"
+  ],
+  "file": "src/ft_islower.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isprint.c",
+   "-o",
+   "obj/ft_isprint.o"
+  ],
+  "file": "src/ft_isprint.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isupper.c",
+   "-o",
+   "obj/ft_isupper.o"
+  ],
+  "file": "src/ft_isupper.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_itoa.c",
+   "-o",
+   "obj/ft_itoa.o"
+  ],
+  "file": "src/ft_itoa.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memchr.c",
+   "-o",
+   "obj/ft_memchr.o"
+  ],
+  "file": "src/ft_memchr.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memcmp.c",
+   "-o",
+   "obj/ft_memcmp.o"
+  ],
+  "file": "src/ft_memcmp.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memcpy.c",
+   "-o",
+   "obj/ft_memcpy.o"
+  ],
+  "file": "src/ft_memcpy.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memmove.c",
+   "-o",
+   "obj/ft_memmove.o"
+  ],
+  "file": "src/ft_memmove.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memset.c",
+   "-o",
+   "obj/ft_memset.o"
+  ],
+  "file": "src/ft_memset.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_putchar_fd.c",
+   "-o",
+   "obj/ft_putchar_fd.o"
+  ],
+  "file": "src/ft_putchar_fd.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_putendl_fd.c",
+   "-o",
+   "obj/ft_putendl_fd.o"
+  ],
+  "file": "src/ft_putendl_fd.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_putnbr_fd.c",
+   "-o",
+   "obj/ft_putnbr_fd.o"
+  ],
+  "file": "src/ft_putnbr_fd.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_putstr_fd.c",
+   "-o",
+   "obj/ft_putstr_fd.o"
+  ],
+  "file": "src/ft_putstr_fd.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_split.c",
+   "-o",
+   "obj/ft_split.o"
+  ],
+  "file": "src/ft_split.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strchr.c",
+   "-o",
+   "obj/ft_strchr.o"
+  ],
+  "file": "src/ft_strchr.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strdup.c",
+   "-o",
+   "obj/ft_strdup.o"
+  ],
+  "file": "src/ft_strdup.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strjoin.c",
+   "-o",
+   "obj/ft_strjoin.o"
+  ],
+  "file": "src/ft_strjoin.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strlcat.c",
+   "-o",
+   "obj/ft_strlcat.o"
+  ],
+  "file": "src/ft_strlcat.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strmapi.c",
+   "-o",
+   "obj/ft_strmapi.o"
+  ],
+  "file": "src/ft_strmapi.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strncmp.c",
+   "-o",
+   "obj/ft_strncmp.o"
+  ],
+  "file": "src/ft_strncmp.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strnstr.c",
+   "-o",
+   "obj/ft_strnstr.o"
+  ],
+  "file": "src/ft_strnstr.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strrchr.c",
+   "-o",
+   "obj/ft_strrchr.o"
+  ],
+  "file": "src/ft_strrchr.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strrev.c",
+   "-o",
+   "obj/ft_strrev.o"
+  ],
+  "file": "src/ft_strrev.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strtrim.c",
+   "-o",
+   "obj/ft_strtrim.o"
+  ],
+  "file": "src/ft_strtrim.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_substr.c",
+   "-o",
+   "obj/ft_substr.o"
+  ],
+  "file": "src/ft_substr.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_tolower.c",
+   "-o",
+   "obj/ft_tolower.o"
+  ],
+  "file": "src/ft_tolower.c"
+ },
+ {
+  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_toupper.c",
+   "-o",
+   "obj/ft_toupper.o"
+  ],
+  "file": "src/ft_toupper.c"
  }
 ]

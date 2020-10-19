@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:08:44 by nschat        #+#    #+#                 */
-/*   Updated: 2020/09/10 00:35:22 by nschat        ########   odam.nl         */
+/*   Updated: 2020/10/19 14:17:35 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	main(int ac, char **av)
 
 	if (ac < 2)
 	{
-		puterror("No \".rt\" file provided");
+		puterror(__FILE__, __LINE__, "no arguments provided");
 		return (1);
 	}
 	lines = get_lines(av[1]);
@@ -37,6 +37,8 @@ int	main(int ac, char **av)
 		copy = copy->next; //
 	} //
 	data = parse_lines(lines);
+	//if (ft_strcmp(av[2], "--save") == 0)
+	//	render_to_file(data)
 	render(data);
 	return (0);
 }

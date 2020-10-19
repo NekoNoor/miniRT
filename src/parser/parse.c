@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/09/15 20:30:48 by nschat        ########   odam.nl         */
+/*   Updated: 2020/10/19 14:18:20 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,21 +64,14 @@ static size_t	ft_strlen_space(const char *s)
 char		*get_identifier(char *s) // R,A,c,l,sp,pl,cy,tr
 {
 	char	*ident;
-	size_t	count;
-	size_t	i;
+	size_t	len;
 
-	count = ft_strlen_space(s);
-	ident = malloc(sizeof(char) * (count + 1));
-	i = 0;
-	while (i < count)
-	{
-		ident[i] = s[i];
-		i++;
-	}
-	ident[i] = '\0';
+	len = ft_strlen_space(s);
+	ident = malloc(sizeof(char) * (len + 1));
+	ft_strlcpy(ident, s, len + 1);
 	if (!valid_ident(ident))
 	{
-		puterror("parse: invalid identifier");
+		puterror(__FILE__, __LINE__, "invalid identifier");
 		free(ident);
 		return (NULL);
 	}
