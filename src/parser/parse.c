@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/10/19 17:12:35 by nschat        ########   odam.nl         */
+/*   Updated: 2020/10/27 15:16:21 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,16 @@ static size_t	ft_strlen_space(const char *s)
 	return (len);
 }
 
-char		*get_identifier(char *s) // R,A,c,l,sp,pl,sq,cy,tr
+static int		clamp(int num, int min, int max)
+{
+	if (num > max)
+		return (max);
+	if (num < min)
+		return (min);
+	return (num);
+}
+
+char			*get_identifier(char *s) // R,A,c,l,sp,pl,sq,cy,tr
 {
 	char	*ident;
 	size_t	len;
@@ -82,21 +91,39 @@ char		*get_identifier(char *s) // R,A,c,l,sp,pl,sq,cy,tr
  *double		get_ratio(char *s) // 0.0-1.0
  *{
  *}
- *
- *int			get_fov(char *s) // 0-180
- *{
- *}
- *
- *int			get_color(char *s) // 0-255,0-255,0-255
- *{
- *}
- *
+ */
+
+int				get_fov(char *s) // 0-180
+{
+	int	fov;
+
+	fov = ft_atoi(s);
+	if (fov < 0 || fov > 180)
+		puterror(__FILE__, __LINE__, "fov outside of [0-180]");
+	return (clamp(fov, 0, 180));
+}
+
+int				get_color(char *s) // 0-255,0-255,0-255
+{
+	int	color;
+
+	color = clamp(ft_atoi(s), 0, 255);
+	while (ft_isdigit(*s))
+		s++;
+	color = color << 2 & clamp(ft_atoi(s), 0, 255);
+	while (ft_isdigit(*s))
+		s++;
+	color = color << 2 & clamp(ft_atoi(s), 0, 255);
+	return (color);
+}
+
+/*
  *double		get_double(char *s)
  *{
  *}
  */
 
-t_field		*get_fields(char *line) // use above functions depending on identifier
+t_field			*get_fields(char *line) // use above functions depending on identifier
 {
 	t_field	*fields;
 	char	*ident;
@@ -114,7 +141,7 @@ t_field		*get_fields(char *line) // use above functions depending on identifier
 	return (fields);
 }
 
-t_mlx_data	*parse_lines(t_list *lines)
+t_mlx_data		*parse_lines(t_list *lines)
 {
 	t_mlx_data	*data;
 	size_t		i;
