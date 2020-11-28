@@ -1,6 +1,6 @@
 [
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT",
+  "directory": "/Users/nschat/Projects/miniRT",
   "arguments": [
    "gcc",
    "-Wall",
@@ -9,353 +9,7 @@
    "-I",
    "include",
    "-I",
-   "lib/libmlx-linux",
-   "-I",
-   "lib/libftprintf/include",
-   "-I",
-   "lib/libgnl",
-   "-I",
-   "lib/libft/include",
-   "-c",
-   "src/error/puterror.c",
-   "-o",
-   "obj/error/puterror.o"
-  ],
-  "file": "src/error/puterror.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_wait_first_expose.o",
-   "mlx_int_wait_first_expose.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_wait_first_expose.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_new_image.o",
-   "mlx_new_image.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_new_image.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-I/usr/include",
-   "-O3",
-   "-I..",
-   "-o",
-   "main.o",
-   "main.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux/test",
-  "file": "main.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_get_visual.o",
-   "mlx_int_get_visual.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_get_visual.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_init.o",
-   "mlx_init.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_init.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_get_data_addr.o",
-   "mlx_get_data_addr.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_get_data_addr.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_anti_resize_win.o",
-   "mlx_int_anti_resize_win.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_anti_resize_win.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_flush_event.o",
-   "mlx_flush_event.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_flush_event.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_rgb.o",
-   "mlx_rgb.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_rgb.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-I",
-   "lib/libmlx-linux",
-   "-I",
-   "lib/libftprintf/include",
-   "-I",
-   "lib/libgnl",
-   "-I",
-   "lib/libft/include",
-   "-c",
-   "src/main.c",
-   "-o",
-   "obj/main.o"
-  ],
-  "file": "src/main.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_str_to_wordtab.o",
-   "mlx_int_str_to_wordtab.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_str_to_wordtab.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_mouse_hook.o",
-   "mlx_mouse_hook.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_mouse_hook.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_xpm.o",
-   "mlx_xpm.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_xpm.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_destroy_window.o",
-   "mlx_destroy_window.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_destroy_window.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_loop.o",
-   "mlx_loop.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_loop.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_hook.o",
-   "mlx_hook.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_hook.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_png.o",
-   "mlx_png.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_png.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_string_put.o",
-   "mlx_string_put.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_string_put.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_set_win_event_mask.o",
-   "mlx_int_set_win_event_mask.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_set_win_event_mask.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-I",
-   "lib/libmlx-linux",
-   "-I",
-   "lib/libftprintf/include",
-   "-I",
-   "lib/libgnl",
-   "-I",
-   "lib/libft/include",
-   "-c",
-   "src/parser/parse.c",
-   "-o",
-   "obj/parser/parse.o"
-  ],
-  "file": "src/parser/parse.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_get_color_value.o",
-   "mlx_get_color_value.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_get_color_value.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_destroy_image.o",
-   "mlx_destroy_image.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_destroy_image.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_pixel_put.o",
-   "mlx_pixel_put.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_pixel_put.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-I",
-   "lib/libmlx-linux",
+   "lib/libmlx-macos",
    "-I",
    "lib/libftprintf/include",
    "-I",
@@ -370,98 +24,7 @@
   "file": "src/renderer/render.c"
  },
  {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_param_event.o",
-   "mlx_int_param_event.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_param_event.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_expose_hook.o",
-   "mlx_expose_hook.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_expose_hook.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_key_hook.o",
-   "mlx_key_hook.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_key_hook.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_new_window.o",
-   "mlx_new_window.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_new_window.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_loop_hook.o",
-   "mlx_loop_hook.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_loop_hook.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_int_do_nothing.o",
-   "mlx_int_do_nothing.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_int_do_nothing.c"
- },
- {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_clear_window.o",
-   "mlx_clear_window.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_clear_window.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT",
+  "directory": "/Users/nschat/Projects/miniRT",
   "arguments": [
    "gcc",
    "-Wall",
@@ -470,7 +33,31 @@
    "-I",
    "include",
    "-I",
-   "lib/libmlx-linux",
+   "lib/libmlx-macos",
+   "-I",
+   "lib/libftprintf/include",
+   "-I",
+   "lib/libgnl",
+   "-I",
+   "lib/libft/include",
+   "-c",
+   "src/parser/parse.c",
+   "-o",
+   "obj/parser/parse.o"
+  ],
+  "file": "src/parser/parse.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-I",
+   "lib/libmlx-macos",
    "-I",
    "lib/libftprintf/include",
    "-I",
@@ -485,48 +72,7 @@
   "file": "src/parser/file.c"
  },
  {
-  "arguments": [
-   "gcc",
-   "-c",
-   "-O3",
-   "-I/usr/include",
-   "-o",
-   "mlx_put_image_to_window.o",
-   "mlx_put_image_to_window.c"
-  ],
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libmlx-linux",
-  "file": "mlx_put_image_to_window.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libgnl",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-c",
-   "get_next_line.c",
-   "-o",
-   "obj/get_next_line.o"
-  ],
-  "file": "get_next_line.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libgnl",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-c",
-   "get_next_line_utils.c",
-   "-o",
-   "obj/get_next_line_utils.o"
-  ],
-  "file": "get_next_line_utils.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT",
   "arguments": [
    "gcc",
    "-Wall",
@@ -534,15 +80,23 @@
    "-Werror",
    "-I",
    "include",
+   "-I",
+   "lib/libmlx-macos",
+   "-I",
+   "lib/libftprintf/include",
+   "-I",
+   "lib/libgnl",
+   "-I",
+   "lib/libft/include",
    "-c",
-   "src/ft_atoi.c",
+   "src/error/puterror.c",
    "-o",
-   "obj/ft_atoi.o"
+   "obj/error/puterror.o"
   ],
-  "file": "src/ft_atoi.c"
+  "file": "src/error/puterror.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT",
   "arguments": [
    "gcc",
    "-Wall",
@@ -550,191 +104,23 @@
    "-Werror",
    "-I",
    "include",
-   "-c",
-   "src/ft_isdigit.c",
-   "-o",
-   "obj/ft_isdigit.o"
-  ],
-  "file": "src/ft_isdigit.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
    "-I",
-   "include",
-   "-c",
-   "src/ft_isspace.c",
-   "-o",
-   "obj/ft_isspace.o"
-  ],
-  "file": "src/ft_isspace.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
+   "lib/libmlx-macos",
    "-I",
-   "include",
-   "-c",
-   "src/ft_lstadd_back.c",
-   "-o",
-   "obj/ft_lstadd_back.o"
-  ],
-  "file": "src/ft_lstadd_back.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
+   "lib/libftprintf/include",
    "-I",
-   "include",
-   "-c",
-   "src/ft_lstadd_front.c",
-   "-o",
-   "obj/ft_lstadd_front.o"
-  ],
-  "file": "src/ft_lstadd_front.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
+   "lib/libgnl",
    "-I",
-   "include",
+   "lib/libft/include",
    "-c",
-   "src/ft_lstclear.c",
+   "src/main.c",
    "-o",
-   "obj/ft_lstclear.o"
+   "obj/main.o"
   ],
-  "file": "src/ft_lstclear.c"
+  "file": "src/main.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_lstdelone.c",
-   "-o",
-   "obj/ft_lstdelone.o"
-  ],
-  "file": "src/ft_lstdelone.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_lstiter.c",
-   "-o",
-   "obj/ft_lstiter.o"
-  ],
-  "file": "src/ft_lstiter.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_lstlast.c",
-   "-o",
-   "obj/ft_lstlast.o"
-  ],
-  "file": "src/ft_lstlast.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_lstmap.c",
-   "-o",
-   "obj/ft_lstmap.o"
-  ],
-  "file": "src/ft_lstmap.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_lstnew.c",
-   "-o",
-   "obj/ft_lstnew.o"
-  ],
-  "file": "src/ft_lstnew.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_lstsize.c",
-   "-o",
-   "obj/ft_lstsize.o"
-  ],
-  "file": "src/ft_lstsize.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_strlen.c",
-   "-o",
-   "obj/ft_strlen.o"
-  ],
-  "file": "src/ft_strlen.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -750,7 +136,7 @@
   "file": "src/printf_mediocre.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -766,7 +152,7 @@
   "file": "src/printf_mediocre_analyze.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -782,7 +168,7 @@
   "file": "src/printf_mediocre_get.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -798,7 +184,7 @@
   "file": "src/printf_mediocre_list.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -814,7 +200,7 @@
   "file": "src/printf_mediocre_nbr.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -830,7 +216,7 @@
   "file": "src/printf_mediocre_print.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -846,7 +232,7 @@
   "file": "src/printf_mediocre_str.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libftprintf",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libftprintf",
   "arguments": [
    "gcc",
    "-Wall",
@@ -862,7 +248,35 @@
   "file": "src/printf_mediocre_utils.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libgnl",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-c",
+   "get_next_line.c",
+   "-o",
+   "obj/get_next_line.o"
+  ],
+  "file": "get_next_line.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libgnl",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-c",
+   "get_next_line_utils.c",
+   "-o",
+   "obj/get_next_line_utils.o"
+  ],
+  "file": "get_next_line_utils.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -871,46 +285,14 @@
    "-I",
    "include",
    "-c",
-   "src/ft_memccpy.c",
+   "src/ft_atoi.c",
    "-o",
-   "obj/ft_memccpy.o"
+   "obj/ft_atoi.o"
   ],
-  "file": "src/ft_memccpy.c"
+  "file": "src/ft_atoi.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_strcmp.c",
-   "-o",
-   "obj/ft_strcmp.o"
-  ],
-  "file": "src/ft_strcmp.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
-  "arguments": [
-   "gcc",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-I",
-   "include",
-   "-c",
-   "src/ft_strlcpy.c",
-   "-o",
-   "obj/ft_strlcpy.o"
-  ],
-  "file": "src/ft_strlcpy.c"
- },
- {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -926,7 +308,7 @@
   "file": "src/ft_bzero.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -942,7 +324,7 @@
   "file": "src/ft_calloc.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -958,7 +340,7 @@
   "file": "src/ft_isalnum.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -974,7 +356,7 @@
   "file": "src/ft_isalpha.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -990,7 +372,23 @@
   "file": "src/ft_isascii.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isdigit.c",
+   "-o",
+   "obj/ft_isdigit.o"
+  ],
+  "file": "src/ft_isdigit.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1006,7 +404,7 @@
   "file": "src/ft_islower.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1022,7 +420,23 @@
   "file": "src/ft_isprint.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_isspace.c",
+   "-o",
+   "obj/ft_isspace.o"
+  ],
+  "file": "src/ft_isspace.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1038,7 +452,7 @@
   "file": "src/ft_isupper.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1054,7 +468,167 @@
   "file": "src/ft_itoa.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstadd_back.c",
+   "-o",
+   "obj/ft_lstadd_back.o"
+  ],
+  "file": "src/ft_lstadd_back.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstadd_front.c",
+   "-o",
+   "obj/ft_lstadd_front.o"
+  ],
+  "file": "src/ft_lstadd_front.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstclear.c",
+   "-o",
+   "obj/ft_lstclear.o"
+  ],
+  "file": "src/ft_lstclear.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstdelone.c",
+   "-o",
+   "obj/ft_lstdelone.o"
+  ],
+  "file": "src/ft_lstdelone.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstiter.c",
+   "-o",
+   "obj/ft_lstiter.o"
+  ],
+  "file": "src/ft_lstiter.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstlast.c",
+   "-o",
+   "obj/ft_lstlast.o"
+  ],
+  "file": "src/ft_lstlast.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstmap.c",
+   "-o",
+   "obj/ft_lstmap.o"
+  ],
+  "file": "src/ft_lstmap.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstnew.c",
+   "-o",
+   "obj/ft_lstnew.o"
+  ],
+  "file": "src/ft_lstnew.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_lstsize.c",
+   "-o",
+   "obj/ft_lstsize.o"
+  ],
+  "file": "src/ft_lstsize.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_memccpy.c",
+   "-o",
+   "obj/ft_memccpy.o"
+  ],
+  "file": "src/ft_memccpy.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1070,7 +644,7 @@
   "file": "src/ft_memchr.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1086,7 +660,7 @@
   "file": "src/ft_memcmp.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1102,7 +676,7 @@
   "file": "src/ft_memcpy.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1118,7 +692,7 @@
   "file": "src/ft_memmove.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1134,7 +708,7 @@
   "file": "src/ft_memset.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1150,7 +724,7 @@
   "file": "src/ft_putchar_fd.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1166,7 +740,7 @@
   "file": "src/ft_putendl_fd.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1182,7 +756,7 @@
   "file": "src/ft_putnbr_fd.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1198,7 +772,7 @@
   "file": "src/ft_putstr_fd.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1214,7 +788,7 @@
   "file": "src/ft_split.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1230,7 +804,23 @@
   "file": "src/ft_strchr.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strcmp.c",
+   "-o",
+   "obj/ft_strcmp.o"
+  ],
+  "file": "src/ft_strcmp.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1246,7 +836,7 @@
   "file": "src/ft_strdup.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1262,7 +852,7 @@
   "file": "src/ft_strjoin.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1278,7 +868,39 @@
   "file": "src/ft_strlcat.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strlcpy.c",
+   "-o",
+   "obj/ft_strlcpy.o"
+  ],
+  "file": "src/ft_strlcpy.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_strlen.c",
+   "-o",
+   "obj/ft_strlen.o"
+  ],
+  "file": "src/ft_strlen.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1294,7 +916,7 @@
   "file": "src/ft_strmapi.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1310,7 +932,7 @@
   "file": "src/ft_strncmp.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1326,7 +948,7 @@
   "file": "src/ft_strnstr.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1342,7 +964,7 @@
   "file": "src/ft_strrchr.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1358,7 +980,7 @@
   "file": "src/ft_strrev.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1374,7 +996,7 @@
   "file": "src/ft_strtrim.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1390,7 +1012,7 @@
   "file": "src/ft_substr.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1406,7 +1028,7 @@
   "file": "src/ft_tolower.c"
  },
  {
-  "directory": "/home/cuddles/Codam/Projects/miniRT/lib/libft",
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
   "arguments": [
    "gcc",
    "-Wall",
@@ -1420,5 +1042,41 @@
    "obj/ft_toupper.o"
   ],
   "file": "src/ft_toupper.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libmlx-macos",
+  "arguments": [
+   "cc",
+   "-O3",
+   "-c",
+   "-o",
+   "mlx_xpm.o",
+   "mlx_xpm.c"
+  ],
+  "file": "mlx_xpm.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libmlx-macos",
+  "arguments": [
+   "cc",
+   "-O3",
+   "-c",
+   "-o",
+   "mlx_png.o",
+   "mlx_png.c"
+  ],
+  "file": "mlx_png.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libmlx-macos",
+  "arguments": [
+   "cc",
+   "-O3",
+   "-c",
+   "-o",
+   "mlx_string_put.o",
+   "mlx_string_put.c"
+  ],
+  "file": "mlx_string_put.c"
  }
 ]
