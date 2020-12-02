@@ -1,39 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   parser.h                                           :+:    :+:            */
+/*   ft_strncmp.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/06/15 14:13:58 by nschat        #+#    #+#                 */
-/*   Updated: 2020/12/02 17:05:19 by nschat        ########   odam.nl         */
+/*   Created: 2019/10/28 17:48:21 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/18 17:41:23 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSER_H
-# define PARSER_H
-# include "renderer.h"
-# include "libft.h"
+#include <stddef.h>
 
-typedef	struct	s_table
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	const char	*ident;
-	int			num_fields;
-	const char	*field_types;
-}				t_table;
-
-typedef union	u_field
-{
-	t_vec			vec;
-	double			ratio;
-	int				fov;
-	int				color;
-	double			dbl;
-	unsigned int	uint;
-	
-}				t_field;
-
-t_list			*get_lines(const char *path);
-t_mlx_data		*parse_lines(t_list *lines);
-
-#endif
+	while (n)
+	{
+		if (*s1 != *s2)
+			return (*(unsigned char *)s1 - *(unsigned char *)s2);
+		if (*s1 == '\0')
+			break ;
+		s2++;
+		s1++;
+		n--;
+	}
+	return (0);
+}

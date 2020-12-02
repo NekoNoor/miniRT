@@ -1,39 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   parser.h                                           :+:    :+:            */
+/*   ft_putnbr_fd.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/06/15 14:13:58 by nschat        #+#    #+#                 */
-/*   Updated: 2020/12/02 17:05:19 by nschat        ########   odam.nl         */
+/*   Created: 2019/10/28 18:16:30 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/17 20:09:54 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSER_H
-# define PARSER_H
-# include "renderer.h"
-# include "libft.h"
+#include "libft.h"
+#include <limits.h>
 
-typedef	struct	s_table
+void	ft_putnbr_fd(int n, int fd)
 {
-	const char	*ident;
-	int			num_fields;
-	const char	*field_types;
-}				t_table;
-
-typedef union	u_field
-{
-	t_vec			vec;
-	double			ratio;
-	int				fov;
-	int				color;
-	double			dbl;
-	unsigned int	uint;
-	
-}				t_field;
-
-t_list			*get_lines(const char *path);
-t_mlx_data		*parse_lines(t_list *lines);
-
-#endif
+	if (n == INT_MIN)
+	{
+		ft_putnbr_fd(INT_MIN / 10, fd);
+		n = -(INT_MIN % 10);
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n *= -1;
+	}
+	if (n >= 10)
+		ft_putnbr_fd(n / 10, fd);
+	ft_putchar_fd((n % 10) + '0', fd);
+}

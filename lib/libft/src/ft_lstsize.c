@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   parser.h                                           :+:    :+:            */
+/*   ft_lstsize_bonus.c                                 :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/06/15 14:13:58 by nschat        #+#    #+#                 */
-/*   Updated: 2020/12/02 17:05:19 by nschat        ########   odam.nl         */
+/*   Created: 2019/11/06 13:09:16 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/26 12:26:51 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSER_H
-# define PARSER_H
-# include "renderer.h"
-# include "libft.h"
+#include "libft.h"
 
-typedef	struct	s_table
+int	ft_lstsize(t_list *lst)
 {
-	const char	*ident;
-	int			num_fields;
-	const char	*field_types;
-}				t_table;
+	int	size;
 
-typedef union	u_field
-{
-	t_vec			vec;
-	double			ratio;
-	int				fov;
-	int				color;
-	double			dbl;
-	unsigned int	uint;
-	
-}				t_field;
-
-t_list			*get_lines(const char *path);
-t_mlx_data		*parse_lines(t_list *lines);
-
-#endif
+	size = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		size++;
+	}
+	return (size);
+}

@@ -1,39 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   parser.h                                           :+:    :+:            */
+/*   ft_memchr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/06/15 14:13:58 by nschat        #+#    #+#                 */
-/*   Updated: 2020/12/02 17:05:19 by nschat        ########   odam.nl         */
+/*   Created: 2019/10/28 17:48:19 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/18 17:40:49 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSER_H
-# define PARSER_H
-# include "renderer.h"
-# include "libft.h"
+#include <stddef.h>
 
-typedef	struct	s_table
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const char	*ident;
-	int			num_fields;
-	const char	*field_types;
-}				t_table;
+	unsigned const char	*s_ucc;
+	unsigned char		c_uc;
 
-typedef union	u_field
-{
-	t_vec			vec;
-	double			ratio;
-	int				fov;
-	int				color;
-	double			dbl;
-	unsigned int	uint;
-	
-}				t_field;
-
-t_list			*get_lines(const char *path);
-t_mlx_data		*parse_lines(t_list *lines);
-
-#endif
+	s_ucc = (unsigned const char *)s;
+	c_uc = (unsigned char)c;
+	while (n)
+	{
+		if (*s_ucc == c_uc)
+			return ((void *)s_ucc);
+		s_ucc++;
+		n--;
+	}
+	return (NULL);
+}

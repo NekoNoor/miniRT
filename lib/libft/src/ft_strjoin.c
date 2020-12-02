@@ -1,39 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   parser.h                                           :+:    :+:            */
+/*   ft_strjoin.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/06/15 14:13:58 by nschat        #+#    #+#                 */
-/*   Updated: 2020/12/02 17:05:19 by nschat        ########   odam.nl         */
+/*   Created: 2019/10/28 18:16:27 by nschat        #+#    #+#                 */
+/*   Updated: 2019/11/17 15:46:04 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSER_H
-# define PARSER_H
-# include "renderer.h"
-# include "libft.h"
+#include "libft.h"
+#include <stdlib.h>
 
-typedef	struct	s_table
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	const char	*ident;
-	int			num_fields;
-	const char	*field_types;
-}				t_table;
+	char	*dup;
+	int		s1len;
+	int		s2len;
 
-typedef union	u_field
-{
-	t_vec			vec;
-	double			ratio;
-	int				fov;
-	int				color;
-	double			dbl;
-	unsigned int	uint;
-	
-}				t_field;
-
-t_list			*get_lines(const char *path);
-t_mlx_data		*parse_lines(t_list *lines);
-
-#endif
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+	s1len = ft_strlen(s1);
+	s2len = ft_strlen(s2);
+	dup = (char *)malloc((s1len + s2len + 1) * sizeof(char));
+	if (dup == NULL)
+		return (NULL);
+	ft_strlcpy(dup, s1, s1len + 1);
+	ft_strlcat(dup, s2, s1len + s2len + 1);
+	return (dup);
+}
