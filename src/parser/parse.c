@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/11/16 13:14:47 by nschat        ########   odam.nl         */
+/*   Updated: 2020/12/02 17:26:48 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ const t_table			g_ident_table[9] = {
 	{"tr", 4, "xxxc"}
 };
 
-static t_table	get_ident_info(char *ident)
+static t_table			get_ident_info(char *ident)
 {
 	size_t	i;
 
@@ -94,7 +94,9 @@ char					*get_identifier(char *s)
 
 double					get_double(char *s)
 {
-	return (ft_atof(s));
+	//return (ft_atof(s));
+	(void)s;
+	return (0.0);
 }
 
 t_vec					get_vector(char *s)
@@ -120,7 +122,7 @@ double					get_ratio(char *s)
 unsigned int			get_num(char *s)
 {
 	int	num;
-	
+
 	num = ft_atoi(s);
 	if (num < 0)
 		puterror(__FILE__, __LINE__, "number less than 0");

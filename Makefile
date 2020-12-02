@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/25 03:39:52 by nschat        #+#    #+#                  #
-#    Updated: 2020/10/19 13:59:58 by nschat        ########   odam.nl          #
+#    Updated: 2020/12/02 17:25:50 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,6 +92,7 @@ clean:
 	$(RM) -r $(ODIR)
 
 fclean: clean
+	$(RM) libmlx.dylib
 	$(RM) $(LIBS)
 	$(RM) $(NAME)
 

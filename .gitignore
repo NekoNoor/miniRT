@@ -1,4 +1,10 @@
 .clangd/
+lib/libft/libft.a
+lib/libft/obj/
+lib/libftprintf/libftprintf.a
+lib/libftprintf/obj/
+lib/libgnl/libgnl.a
+lib/libgnl/obj/
 lib/libmlx-linux/libmlx.a
 lib/libmlx-linux/mlx_clear_window.o
 lib/libmlx-linux/mlx_destroy_image.o
