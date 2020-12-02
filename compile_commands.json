@@ -1078,5 +1078,21 @@
    "mlx_string_put.c"
   ],
   "file": "mlx_string_put.c"
+ },
+ {
+  "directory": "/Users/nschat/Projects/miniRT/lib/libft",
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-I",
+   "include",
+   "-c",
+   "src/ft_atof.c",
+   "-o",
+   "obj/ft_atof.o"
+  ],
+  "file": "src/ft_atof.c"
  }
 ]

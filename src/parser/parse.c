@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/27 13:09:32 by nschat        #+#    #+#                 */
-/*   Updated: 2020/12/02 17:26:48 by nschat        ########   odam.nl         */
+/*   Updated: 2020/12/02 17:35:57 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,9 +94,7 @@ char					*get_identifier(char *s)
 
 double					get_double(char *s)
 {
-	//return (ft_atof(s));
-	(void)s;
-	return (0.0);
+	return (ft_atof(s));
 }
 
 t_vec					get_vector(char *s)

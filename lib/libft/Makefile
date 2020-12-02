@@ -6,7 +6,7 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/29 17:30:18 by nschat        #+#    #+#                  #
-#    Updated: 2020/10/19 15:16:20 by nschat        ########   odam.nl          #
+#    Updated: 2020/12/02 17:35:25 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,8 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I include
 
 HDR = include/libft.h
-SRC = ft_atoi.c \
+SRC = ft_atof.c \
+	  ft_atoi.c \
 	  ft_bzero.c \
 	  ft_calloc.c \
 	  ft_isalnum.c \
